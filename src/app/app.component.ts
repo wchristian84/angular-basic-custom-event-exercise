@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-basic-custom-event-exercise';
+  searchResult: string = '';
+
+  getSearch(terms: string) {
+    this.searchResult = terms;
+    console.log('searchResults:', terms);
+
+  }
 }
